@@ -35,7 +35,7 @@ public class Acao extends Ativo{
 	@Override
 	protected float valorRendimento() {
 		
-	float valor = getValor() + (dividendo * 3.0f);
+	float valor = getValor() + (dividendo * 4.0f);
 		
 		return valor;
 	}
