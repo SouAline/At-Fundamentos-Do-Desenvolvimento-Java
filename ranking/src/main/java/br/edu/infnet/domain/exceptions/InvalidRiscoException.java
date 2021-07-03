@@ -6,3 +6,4 @@ public class InvalidRiscoException extends Exception{
 		super(mensagem);
 	}
 }
+
