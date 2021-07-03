@@ -19,15 +19,16 @@ public class Acao extends Ativo{
 	public String toString() {
 		
 		StringBuilder sb = new StringBuilder();
-		sb.append(super.toString());
-		sb.append(";");
-		sb.append(this.empresa);
-		sb.append(";");
-		sb.append(this.dividendo);
-		sb.append(";");
-		sb.append(this.risco);
-		sb.append(";");
-		sb.append(this.valorRendimento());
+		sb.append("Código Ação:" + super.toString() + "   \nEmpresa: " + this.empresa + "   Valor de dividendo R$" + this.dividendo + "   \nRisco: " + this.risco + "   Valor total final no trimestre R$" + this.valorRendimento());
+//		sb.append(super.toString());
+//		sb.append(";");
+//		sb.append(this.empresa);
+//		sb.append(";");
+//		sb.append(this.dividendo);
+//		sb.append(";");
+//		sb.append(this.risco);
+//		sb.append(";");
+//		sb.append(this.valorRendimento());
 		sb.append("\r\n");
 		return sb.toString();
 	}

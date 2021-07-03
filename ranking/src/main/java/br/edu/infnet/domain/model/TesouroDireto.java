@@ -24,15 +24,16 @@ public class TesouroDireto extends Ativo{
 	public String toString() {
 		
 		StringBuilder sb = new StringBuilder();
-		sb.append(super.toString());//Inicia a frase com o nome, valor, quantidade que está na classe mãe (Ativo).
-		sb.append(";");
-		sb.append(this.tipo);
-		sb.append(";");
-		sb.append(this.data);
-		sb.append(";");
-		sb.append(this.rentabilidadeAnual);
-		sb.append(";");
-		sb.append(this.valorRendimento());
+		sb.append("Tesouro Direto código: " + super.toString() + "  \nTipo taxa juros a receber: " + this.tipo + "   Data de resgate: " +  this.data + " \nPercentual de rentabilidade anual %: " + this.rentabilidadeAnual + "   Rentabilidade total R$" + this.rentabilidadeAnual);
+//		sb.append(super.toString());//Inicia a frase com o nome, valor, quantidade que está na classe mãe (Ativo).
+//		sb.append(";");
+//		sb.append(this.tipo);
+//		sb.append(";");
+//		sb.append(this.data);
+//		sb.append(";");
+//		sb.append(this.rentabilidadeAnual);
+//		sb.append(";");
+//		sb.append(this.valorRendimento());
 		sb.append("\r\n");
 		return sb.toString();
 	}
