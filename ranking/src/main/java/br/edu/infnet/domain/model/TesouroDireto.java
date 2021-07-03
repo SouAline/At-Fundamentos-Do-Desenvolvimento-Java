@@ -1,17 +1,18 @@
 package br.edu.infnet.domain.model;
 
-import java.time.LocalDateTime;
+//import java.time.LocalDateTime;
 
 import br.edu.infnet.domain.exceptions.InvalidTipoException;
 
 public class TesouroDireto extends Ativo{
 
 	private String tipo;
-	private LocalDateTime data;
+	//private LocalDateTime data; é só alterar para
+	private String data;
 	private float rentabilidadeAnual;
 	
 	
-	public TesouroDireto(String nome, float valor, int quantidade, String tipo, LocalDateTime data, float rentabilidadeAnual) {
+	public TesouroDireto(String nome, float valor, int quantidade, String tipo, String data, float rentabilidadeAnual) {
 		
 		super(nome, valor, quantidade);
 		this.tipo = tipo;
@@ -78,13 +79,20 @@ public class TesouroDireto extends Ativo{
 		this.tipo = tipo;
 	}
 
-	public LocalDateTime getData() {
+
+	public String getData(){
 		return data;
 	}
-
-	public void setData(LocalDateTime data) {
+	public void setData(){
 		this.data = data;
 	}
+//	public LocalDateTime getData() {
+//		return data;
+//	}
+
+//	public void setData(LocalDateTime data) {
+//		this.data = data;
+//	}
 
 	public float getRentabilidadeAnual() {
 		return rentabilidadeAnual;

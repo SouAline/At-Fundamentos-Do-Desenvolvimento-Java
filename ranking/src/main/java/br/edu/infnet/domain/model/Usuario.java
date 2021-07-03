@@ -16,11 +16,12 @@ public class Usuario {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(this.nome);
-		sb.append(";");
-		sb.append(this.email);
-		sb.append(";");
-		sb.append(this.perfil);
+		sb.append("A investidora " + this.nome + " (" + this.email + ")" + " tem o perfil de investimento " + this.perfil + " e possui os seguintes ativos: ");
+//		sb.append(this.nome);
+//		sb.append(";");
+//		sb.append(this.email);
+//		sb.append(";");
+//		sb.append(this.perfil);
 		sb.append("\r\n");
 		return sb.toString();
 		
