@@ -1,4 +1,0 @@
-A investidora Maria (fulaninha@teste.com) tem o perfil de investimento conservador e possui os seguintes ativos: 
-Abc;95.0;1;IPCA;2021-07-03T13:19:40.280695100;8.5;104.5
-Abc;56.0;5;Cvc;8.0;1;152.0
-Vvar;16.0;100;Via Varejo;0.75;5;19.0
