@@ -10,7 +10,7 @@ public class FundoImobiliarioTeste {
 			fundo1.validaRisco();
 			System.out.println(fundo1);
 		}catch(InvalidRiscoException mensagem){
-			mensagem.printStackTrace();//metodo de exception
+			mensagem.printStackTrace();
 			
 		}
 	}

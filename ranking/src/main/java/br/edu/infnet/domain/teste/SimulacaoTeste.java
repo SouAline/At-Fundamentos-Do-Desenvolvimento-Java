@@ -13,5 +13,6 @@ public class SimulacaoTeste {
         s1.setUsuario(usuario1);
         s1.setDescricao("realizou uma simulacao de investimento no dia");
         System.out.println("Simulacao: " + s1);
+
     }
 }

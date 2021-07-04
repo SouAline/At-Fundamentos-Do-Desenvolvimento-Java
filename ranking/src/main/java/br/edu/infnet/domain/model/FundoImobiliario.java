@@ -19,16 +19,11 @@ public class FundoImobiliario extends Ativo{
 	public String toString() {
 		
 		StringBuilder sb = new StringBuilder();
-		sb.append("Fundo Imobiliário código: " + super.toString() + " \nEmpresa: " + this.empresa + "   Dividendo R$ " + this.dividendo + "   Risco: " + this.risco + " \nValor total anual R$" + this.valorRendimento());
-//		sb.append(super.toString());
-//		sb.append(";");
-//		sb.append(this.empresa);
-//		sb.append(";");
-//		sb.append(this.dividendo);
-//		sb.append(";");
-//		sb.append(this.risco);
-//		sb.append(";");
-//		sb.append(this.valorRendimento());
+		sb.append("Fundo Imobiliário código: " + super.toString()
+				+ " \nEmpresa: " + this.empresa
+				+ "   Dividendo R$ " + this.dividendo
+				+ "   Risco: " + this.risco
+				+ " \nValor total anual R$" + this.valorRendimento());
 		sb.append("\r\n");
 		return sb.toString();
 	}

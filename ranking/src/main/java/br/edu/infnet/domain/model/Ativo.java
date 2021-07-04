@@ -5,8 +5,7 @@ public abstract class Ativo {
 	protected String nome;
 	protected float valor;
 	protected int quantidade;
-	
-	
+
 	
 	public Ativo(String nome, float valor, int quantidade) {
 		this.nome = nome;
@@ -19,12 +18,8 @@ public abstract class Ativo {
 	public String toString() {
 		
 		StringBuilder sb = new StringBuilder();
-		sb.append(this.nome + "   Valor de compra R$" + this.valor + "   Quantidade: " + this.quantidade);
-//		sb.append(this.nome);
-//		sb.append(";");
-//		sb.append(this.valor);
-//		sb.append(";");
-//		sb.append(this.quantidade);
+		sb.append(this.nome + "   Valor de compra R$" + this.valor
+				+ "   Quantidade: " + this.quantidade);
 		return sb.toString();
 	}
 		

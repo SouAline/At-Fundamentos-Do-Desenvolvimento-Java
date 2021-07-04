@@ -8,8 +8,11 @@ public class Simulacao {
      private Usuario usuario;
      private LocalDateTime data;
      private String descricao;
+     private float simulacao;
+
 
      public Simulacao() {
+
           data = LocalDateTime.now();
      }
 
@@ -23,8 +26,12 @@ public class Simulacao {
           );
      }
 
+
      public void balanco() {
 
+     }
+     public float getSimulacao(){
+          return simulacao;
      }
 
      public Usuario getUsuario() {

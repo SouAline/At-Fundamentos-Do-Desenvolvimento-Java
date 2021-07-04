@@ -12,7 +12,7 @@ public class TesouroDiretoTeste {
 		try {
 			cota1.validaTipo();
 			System.out.println(cota1);
-		}catch(InvalidTipoException mensagem){
+		}catch (InvalidTipoException mensagem){
 			mensagem.printStackTrace();
 		}
 			

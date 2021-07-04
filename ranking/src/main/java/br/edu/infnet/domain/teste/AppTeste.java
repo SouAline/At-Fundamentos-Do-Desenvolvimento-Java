@@ -10,18 +10,18 @@ import br.edu.infnet.domain.model.Usuario;
 import org.springframework.core.io.ClassPathResource;
 
 import java.io.*;
-//import java.time.LocalDateTime;
-//import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class AppTeste {
     public static void main(String[] args) {
         String dir = System.getProperty("user.dir");
-       // String arq = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss")) + ".txt";
+        String arq = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss")) + ".txt";
 
         try {
             try {
                 InputStream resource = new ClassPathResource("static/ativos.txt").getInputStream();
-                FileWriter fileW = new FileWriter(dir);
+                FileWriter fileW = new FileWriter(dir + arq);
 
                 BufferedWriter escrita = new BufferedWriter(fileW);
                 BufferedReader leitura = new BufferedReader(new InputStreamReader(resource));

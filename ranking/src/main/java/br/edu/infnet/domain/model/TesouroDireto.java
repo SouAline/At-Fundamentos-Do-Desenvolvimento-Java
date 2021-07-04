@@ -7,7 +7,7 @@ import br.edu.infnet.domain.exceptions.InvalidTipoException;
 public class TesouroDireto extends Ativo{
 
 	private String tipo;
-	//private LocalDateTime data; é só alterar para
+	//private LocalDateTime data;
 	private String data;
 	private float rentabilidadeAnual;
 	
@@ -18,23 +18,16 @@ public class TesouroDireto extends Ativo{
 		this.tipo = tipo;
 		this.data = data;
 		this.rentabilidadeAnual = rentabilidadeAnual;
-		
-		
 	}
 
 	public String toString() {
 		
 		StringBuilder sb = new StringBuilder();
-		sb.append("Tesouro Direto código: " + super.toString() + "  \nTipo taxa juros a receber: " + this.tipo + "   Data de resgate: " +  this.data + " \nPercentual de rentabilidade anual %: " + this.rentabilidadeAnual + "   Rentabilidade total R$" + this.rentabilidadeAnual);
-//		sb.append(super.toString());//Inicia a frase com o nome, valor, quantidade que está na classe mãe (Ativo).
-//		sb.append(";");
-//		sb.append(this.tipo);
-//		sb.append(";");
-//		sb.append(this.data);
-//		sb.append(";");
-//		sb.append(this.rentabilidadeAnual);
-//		sb.append(";");
-//		sb.append(this.valorRendimento());
+		sb.append("Tesouro Direto código: " + super.toString()
+				+ "  \nTipo taxa juros a receber: " + this.tipo
+				+ "   Data de resgate: " +  this.data
+				+ " \nPercentual de rentabilidade anual %: " + this.rentabilidadeAnual
+				+ "   Rentabilidade total R$" + this.rentabilidadeAnual);
 		sb.append("\r\n");
 		return sb.toString();
 	}
@@ -68,8 +61,6 @@ public class TesouroDireto extends Ativo{
 			throw new InvalidTipoException("Tipo de Tesouro Direto inválido, por favor escolha entre IPCA, SELIC ou PREFIXADO");
 		return false;
 	}
-
-	
 	
 	public String getTipo() {
 		return tipo;
@@ -86,13 +77,7 @@ public class TesouroDireto extends Ativo{
 	public void setData(){
 		this.data = data;
 	}
-//	public LocalDateTime getData() {
-//		return data;
-//	}
 
-//	public void setData(LocalDateTime data) {
-//		this.data = data;
-//	}
 
 	public float getRentabilidadeAnual() {
 		return rentabilidadeAnual;

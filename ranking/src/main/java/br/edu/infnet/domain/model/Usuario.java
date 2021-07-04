@@ -6,25 +6,21 @@ public class Usuario {
 	private String email;
 	private String perfil;
 	
-	public Usuario(String nome, String email, String perfil) { //construtor padrão
+	public Usuario(String nome, String email, String perfil) {
 		this.nome = nome;
 		this.email = email;
 		this.perfil = perfil;
-		
 	}
 	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("A investidora " + this.nome + " (" + this.email + ")" + " tem o perfil de investimento " + this.perfil + " e possui os seguintes ativos: ");
-//		sb.append(this.nome);
-//		sb.append(";");
-//		sb.append(this.email);
-//		sb.append(";");
-//		sb.append(this.perfil);
+		sb.append("A investidora " + this.nome
+				+ " (" + this.email + ")"
+				+ " tem o perfil de investimento " + this.perfil
+				+ " e possui os seguintes ativos: ");
 		sb.append("\r\n");
 		return sb.toString();
-		
 	}
 	
 	public String getNome() {
