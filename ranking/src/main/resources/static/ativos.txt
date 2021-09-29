@@ -1,4 +1,0 @@
-u;Maria;fulaninha@teste.com;conservador
-T;Abc;95.0;1;IPCA;2021-07-03 13:01:30;8.5;104.5
-F;Abc;56.0;5;Cvc;8.0;1;152.0
-A;Vvar;16.0;100;Via Varejo;0.75;5;19.0
